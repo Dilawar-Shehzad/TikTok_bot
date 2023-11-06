@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: DMSans Bold;
+    src: url(/public/fonts/DMSans-Bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Abel Regular;
+    src: url(/public/fonts/Abel-Regular.woff2) format('woff2');
+  }
+
+  body {
+    font-family: Abel Regular;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(205deg, #F0C735 9.43%, #D98F39 84.49%);
+  }
+  .silver-gradient {
+    background: linear-gradient(206deg, #CAC9C9 5.55%, #979797 91.14%);
+  }
+  .platinum-gradient {
+    background: linear-gradient(195deg, #BA8DF3 10.81%, #615EE2 98.79%);
+  }
+  .start-animation {
+    position: absolute;
+    animation: scroll-text 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes scroll-text {
+      0% {
+        top:0;
+      }
+      50% {
+        top:0;
+      }
+      100% {
+        top: -1000px;
+      }
+  }
+}
